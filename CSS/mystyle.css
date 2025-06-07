@@ -1,0 +1,49 @@
+body 
+{
+  margin: 2;
+  background-image: url('presentacion.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: 100% 100%;
+}
+
+@font-face{
+   
+  font-family: SPACEBIT;
+  src: url('../CSS/fonts/SPACEBIT.ttf');
+}
+h1
+{
+  border: dotted;
+  margin: 200px 500px 200px 500px;
+  font-family: SPACEBIT;
+  font-size: 60px;
+  color: #D9CBAF;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #D1C7B2;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #A49882;
+}
+
+.button:hover {background-color: #D1C7B2}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #A49882;
+  transform: translateY(4px);
+}
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}

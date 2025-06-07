@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> sistema solar </title>
+		<link rel="stylesheet" href="planetas.css">
+	</head>
+
+	<body>
+		<div class="navbar">
+			<center>
+				<h1>Sistema Solar De Nuestro Universo</h1><hr>
+				<a href="../elespacio.html">Volver al Espacio</a>
+				<a href="#ps">Planetas SS</a>
+				<a href="#pe">Planetas Enanos</a>
+				<a href="#informacion">Informacion</a>
+			</center>
+		</div>
+		<br><br><br><br><br><br><br><br>
+		<hr><br>
+		<center>
+			<h3>LA ESTRELLA Y LOS PLANETAS</h3>
+		</center>
+		<br><hr>
+<div class="container">
+		 <center>
+  <div class="images">
+			
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Sun.jpg"alt="Estella Sol">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Mercury1.jpg"alt="Planeta Mercurio">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Venus.jpg"alt="Planeta Venus">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Earth.jpg"alt="Planeta Tierra">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Mars.jpg"alt="Planeta Marte">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Jupiter.jpg"alt="Planeta Jupiter">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Saturn.jpg"alt="Planeta Saturno">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Uranus.jpg"alt="Planeta Urano">
+					<img src="\Proyecto\El Espacio\sistema solar\imagenes planetas\Neptuno.jfif"alt="Planeta Neptuno">
+   </div>
+  <div class="modal">
+    <span class="close">&times;</span>
+    <div class="modalContent">
+      <img src="" class="modalImg" />
+      <span class="modalTxt"></span>
+    </div>
+  </div>
+</div>	
+		<br><hr><br>
+		<center>
+			<h3>PLANETAS ENANOS</h3>
+		</center>
+		<br><hr><br>
+		<div class="container">
+		 <center>
+  <div class="images">
+					<img src="\Proyecto\El Espacio\sistema solar\planetas enanos\Pluto.jpg"alt="Estella Sol">
+					<img src="\Proyecto\El Espacio\sistema solar\planetas enanos\Ceres.jpg"alt="Planeta Mercurio">
+					<img src="\Proyecto\El Espacio\sistema solar\planetas enanos\makemake.jpg"alt="Planeta Venus">
+					<img src="\Proyecto\El Espacio\sistema solar\planetas enanos\Haumea.jpg"alt="Planeta Tierra">
+					<img src="\Proyecto\El Espacio\sistema solar\planetas enanos\Eris.png"alt="Planeta Marte">
+					<img src="\Proyecto\El Espacio\sistema solar\planetas enanos\Sedna.jpg"alt="Planeta Marte">
+  </div>
+  <div class="modal">
+    <span class="close">&times;</span>
+    <div class="modalContent">
+      <img src="" class="modalImg" />
+      <span class="modalTxt"></span>
+    </div>
+  </div>
+</div>
+		<script>
+let images = document.querySelectorAll(".images img");
+let modal = document.querySelector(".modal");
+let modalImg = document.querySelector(".modalImg");
+let modalTxt = document.querySelector(".modalTxt");
+let close = document.querySelector(".close");
+
+images.forEach((image) => 
+{
+  image.addEventListener("click", () => 
+  {
+    modalImg.src = image.src;
+    modalTxt.innerHTML = image.alt;
+    modal.classList.add("appear");
+
+    close.addEventListener("click", () => 
+    {
+      modal.classList.remove("appear");
+    });
+  });
+});
+</script>
+	</body>
+
+</html>
